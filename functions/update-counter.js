@@ -1,7 +1,8 @@
 const fs = require('fs');
 const path = require('path');
 
-const COUNTER_FILE = path.resolve(__dirname, 'counter.json');
+// Use o diretório temporário
+const COUNTER_FILE = path.join('/tmp', 'counter.json');
 
 exports.handler = async () => {
   try {
@@ -23,6 +24,7 @@ exports.handler = async () => {
       body: JSON.stringify({ count: newCount }),
     };
   } catch (error) {
+    console.error('Error updating counter:', error);
     return {
       statusCode: 500,
       body: JSON.stringify({ error: 'Failed to update counter' }),

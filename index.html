@@ -41,8 +41,8 @@
                 const response = await fetch('https://contador-backend-1mia.vercel.app/counter');
                 const data = await response.json();
                 
-                // Atualiza o valor no frontend
-                document.getElementById('contador').textContent = data.count;
+                // Exibe o valor retornado pela API
+                document.getElementById('contador').textContent = data.value;
             } catch (error) {
                 console.error('Erro ao atualizar o contador:', error);
             }

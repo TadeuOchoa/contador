@@ -1,1 +1,13 @@
-
+{
+  "name": "contador-netlify",
+  "version": "1.0.0",
+  "description": "Projeto para contador usando Netlify Functions",
+  "main": "index.js",
+  "scripts": {
+    "start": "netlify dev"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  },
+  "license": "MIT"
+}

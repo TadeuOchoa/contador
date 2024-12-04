@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de curioso</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 20%;
+            color: #333;
+        }
+        h1 {
+            font-size: 2em;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Você foi o <span id="contador">XX</span> curioso a entrar.</h1>
+    <p>Já que tá aqui, entra no Instagram: <a href="https://www.instagram.com/musicochoa/" target="_blank">@musicochoa</a></p>
+
+    <script>
+        // Simulando um contador armazenado localmente (para testes locais)
+        const contadorElemento = document.getElementById('contador');
+        
+        // Recupera o contador do localStorage ou inicializa com 0
+        let contador = parseInt(localStorage.getItem('contador')) || 0;
+
+        // Incrementa o contador
+        contador++;
+
+        // Salva o novo valor no localStorage
+        localStorage.setItem('contador', contador);
+
+        // Atualiza o texto no HTML
+        contadorElemento.textContent = contador;
+    </script>
+</body>
+</html>

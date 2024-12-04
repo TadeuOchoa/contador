@@ -1,0 +1,6 @@
+meu-site-netlify/
+├── netlify.toml
+├── functions/
+│   ├── update-counter.js
+│   └── (o arquivo counter.json será gerado automaticamente)
+└── index.html

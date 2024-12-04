@@ -6,32 +6,18 @@ const METADATA_URL = `https://api.netlify.com/api/v1/sites/${SITE_ID}/metadata`;
 
 exports.handler = async () => {
     try {
-        console.log('Iniciando função...');
-
-        // Log da URL e Headers
-        console.log('METADATA_URL:', METADATA_URL);
-        
         const response = await fetch(`${METADATA_URL}/counter`, {
             headers: {
                 Authorization: `Bearer ${ACCESS_TOKEN}`,
             },
         });
 
-        console.log('Resposta recebida da API:', response.status);
-
-        if (!response.ok) {
-            throw new Error(`Erro ao buscar contador: ${response.statusText}`);
-        }
-
         let data = await response.json();
-        console.log('Dados recebidos:', data);
-
         let currentCount = data.value || 0;
+
         const newCount = currentCount + 1;
 
-        console.log('Atualizando contador para:', newCount);
-
-        const updateResponse = await fetch(`${METADATA_URL}/counter`, {
+        await fetch(`${METADATA_URL}/counter`, {
             method: 'PUT',
             headers: {
                 'Authorization': `Bearer ${ACCESS_TOKEN}`,
@@ -40,18 +26,12 @@ exports.handler = async () => {
             body: JSON.stringify({ value: newCount }),
         });
 
-        console.log('Resposta da atualização:', updateResponse.status);
-
-        if (!updateResponse.ok) {
-            throw new Error(`Erro ao atualizar contador: ${updateResponse.statusText}`);
-        }
-
         return {
             statusCode: 200,
             body: JSON.stringify({ count: newCount }),
         };
     } catch (error) {
-        console.error('Erro na função:', error);
+        console.error('Error:', error);
         return {
             statusCode: 500,
             body: JSON.stringify({ error: 'Failed to update counter' }),

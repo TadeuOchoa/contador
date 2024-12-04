@@ -1,8 +1,8 @@
 const fetch = require('node-fetch');
 
 // Configure as variáveis
-const SITE_ID = 'seu-site-id'; // Substitua pelo Site ID do Netlify
-const ACCESS_TOKEN = 'sua-api-token'; // Substitua pela API Token gerada
+const SITE_ID = '606f0351-8a08-4232-8904-cde452ca29ed'; // Substitua pelo Site ID do Netlify
+const ACCESS_TOKEN = 'nfp_qp6FZJyJ7UfsYYb3y4B8Z52p3aannEhqf2b9'; // Substitua pela API Token gerada
 const METADATA_URL = `https://api.netlify.com/api/v1/sites/${SITE_ID}/metadata`;
 
 exports.handler = async () => {

@@ -57,11 +57,6 @@ const Index = () => {
               <span className="group-hover:text-neon-pink transition-colors">@festamov.it</span>
             </a>
           </div>
-
-          {/* Ticket icon */}
-          <div className="flex justify-center mb-8">
-            <Ticket className="w-12 h-12 text-neon-pink animate-float" />
-          </div>
           
           {/* CTA Button */}
           <div className="flex justify-center mb-12">

@@ -32,7 +32,11 @@ const Index = () => {
         <div className="animate-float">
           {/* Logo/Title */}
           <div className="flex flex-col items-center justify-center mb-6">
-            <img src="/images/movit.png" alt="Logo MOV.IT!" className="w-24 h-24 mb-2" />
+            <img
+              src="/images/movit.png"
+              alt="Logo MOV.IT!"
+              className="h-24 mb-2 object-contain"
+            />
           </div>
 
           <p className="text-xl md:text-2xl font-medium mb-6 text-white/90">

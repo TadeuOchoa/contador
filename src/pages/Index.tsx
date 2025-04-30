@@ -35,42 +35,13 @@ const Index = () => {
             MOV.IT!
           </h1>
           <p className="text-xl md:text-2xl font-medium mb-6 text-white/90">
-            Major Lock 30/04
+            VOCÊ QUE ESTÁ AQUI!
           </p>
           
           {/* Tagline */}
           <div className="mb-6 text-2xl md:text-3xl font-bold text-white">
-            ENTROU VAI TER QUE COMPRAR! 🔥 🍾 🎧
-          </div>
-          
-          {/* Instagram handle with icon */}
-          <div className="flex items-center justify-center mb-8 text-xl">
-            <a 
-              href="https://www.instagram.com/festamov.it/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-white group transition-all duration-300"
-            >
-              <span className="inline-block bg-gradient-to-r from-neon-pink to-neon-blue p-2 rounded-lg animate-pulse-neon group-hover:scale-110 transition-transform">
-                <Instagram size={20} className="text-white" />
-              </span>
-              <span className="group-hover:text-neon-pink transition-colors">@festamov.it</span>
-            </a>
-          </div>
-          
-          {/* CTA Button */}
-          <div className="flex justify-center mb-12">
-            <NeonButton 
-              href="https://www.sympla.com.br/evento/mov-it-major-lock-30-04/2884363"
-              className="text-2xl md:text-3xl py-5 px-10"
-            >
-              COMPRAR INGRESSO
-            </NeonButton>
-          </div>
-          
-          {/* Footer */}
-          <div className="text-white/50 text-sm mt-16">
-            © 2024 MOV.IT! • Todos os direitos reservados
+            VEM FALAR COMIGO QUE VOCÊ GANHA UM TIRINHO!!! 
+            🔥 🍾 
           </div>
         </div>
       </div>

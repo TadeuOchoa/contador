@@ -38,15 +38,30 @@ const Index = () => {
               className="h-24 mb-2 object-contain"
             />
           </div>
-
-          <p className="text-xl md:text-2xl font-medium mb-6 text-white/90">
-            VOCÊ QUE ESTÁ AQUI!
-          </p>
           
           {/* Tagline */}
           <div className="mb-6 text-2xl md:text-3xl font-bold text-white">
-            VEM FALAR COMIGO QUE VOCÊ GANHA UM TIRINHO!!! 
-            🔥 🍾 
+            SIGA A GENTE NO INSTAGRAM! 🔥 🍾 🎧
+          </div>
+          
+          {/* Instagram handle with icon */}
+          <div className="flex items-center justify-center mb-8 text-xl">
+            <a 
+              href="https://www.instagram.com/festamov.it/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-white group transition-all duration-300"
+            >
+              <span className="inline-block bg-gradient-to-r from-neon-pink to-neon-blue p-2 rounded-lg animate-pulse-neon group-hover:scale-110 transition-transform">
+                <Instagram size={20} className="text-white" />
+              </span>
+              <span className="group-hover:text-neon-pink transition-colors">@festamov.it</span>
+            </a>
+          </div>
+          
+          {/* Footer */}
+          <div className="text-white/50 text-sm mt-16">
+            © 2024 MOV.IT! • Todos os direitos reservados
           </div>
         </div>
       </div>

@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import Head from 'next/head';
 
 const Index = () => {
   const [contador, setContador] = useState<number | null>(null);
@@ -25,40 +24,29 @@ const Index = () => {
 
   return (
     <>
-      <Head>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Tadeu Ochoa</title>
-        <style>{`
-          body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 20%;
-            color: #333;
-          }
-          h1 {
-            font-size: 2em;
-          }
-          p {
-            font-size: 1.2em;
-          }
-          a {
-            text-decoration: none;
-            color: #007bff;
-            font-weight: bold;
-          }
-          a:hover {
-            text-decoration: underline;
-          }
-        `}</style>
-      </Head>
-      <main>
-        <h1>
+      <main style={{
+        backgroundColor: '#ffffff',
+        color: '#000000',
+        fontFamily: 'Arial, sans-serif',
+        height: '100vh',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        padding: '20px',
+        textAlign: 'center'
+      }}>
+        <h1 style={{ fontSize: '3rem', marginBottom: '1rem' }}>
           Você foi o <span>{contador !== null ? contador : '...'}</span>° curioso a entrar.
         </h1>
-        <p>
+        <p style={{ fontSize: '1.5rem' }}>
           Já que tá aqui, entra no Instagram:{' '}
-          <a href="https://www.instagram.com/musicochoa/" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.instagram.com/musicochoa/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: '#0000ff', textDecoration: 'none', fontWeight: 'bold' }}
+          >
             @musicochoa
           </a>
         </p>

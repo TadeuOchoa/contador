@@ -14,7 +14,7 @@ const Index = () => {
       gap: '2rem'
     }}>
       <h1 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>
-        Bem-vindo! 🎉
+        Bem-vindo! 🎉🎉
       </h1>
       
       <a

@@ -5,6 +5,8 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  // GitHub Pages serve em /contador/; fora do Actions (Lovable, local) continua na raiz
+  base: process.env.GITHUB_ACTIONS ? "/contador/" : "/",
   server: {
     host: "::",
     port: 8080,
